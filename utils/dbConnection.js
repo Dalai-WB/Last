@@ -1,6 +1,6 @@
 import mongoose, { mongo } from "mongoose";
 import { cache } from "react";
-// mongoose.set("strictQuery", false);
+mongoose.set("strictQuery", true);
 const MONGODB_URL = process.env.MONGODB_URL;
 if (!MONGODB_URL) {
   throw new Error();
